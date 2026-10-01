@@ -82,7 +82,7 @@
 // 107 - masala
 
 // const m107 = (num) =>{
-//     if(typeof num === "number" && !isNaN(num)) return Number(String(num).split("").reverse().join(""))
+//     if(typeof num === "number" && !isNaN(num)) return Number(String(num).split("").filter(e=>(typeof Number(e) === "number" && !isNaN(Number(e)))).sort((a,b)=>Number(b)-Number(a)).join(""))
 // }
 
 // console.log(
@@ -128,4 +128,4 @@
 //     else return 0;
 // };
 
-// console.log(m110("Aziz"))
+// console.log(m110("Aziz"));
